@@ -4,10 +4,18 @@ import './index.css'
 import App from './App.jsx'
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
-
+import ShopContextProvider from './context/ShopContext.jsx'
+/* import LatestCollection from './components/LatestCollection.jsx'
+import BestSeller from '../components/BestSeller';
+ */
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+  <ShopContextProvider>
+  <App />
+  {/* <LatestCollection />
+  <BestSeller  /> */}
  
-    <App />
+    
+    </ShopContextProvider>
     </BrowserRouter>,
 )
