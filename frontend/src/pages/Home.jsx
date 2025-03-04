@@ -11,6 +11,7 @@ import NewsletterBox from '../components/NewsletterBox.jsx';
 const Home = () => {
   return (
     <div>
+      
       <Hero />
       <LatestCollection />
         <BestSeller  />
